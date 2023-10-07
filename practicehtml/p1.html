@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog1</title>
+</head>
+<body bgcolor="skyblue">
+    <script>
+        x=Number(prompt("enter the number"));
+        if(x<0){
+            document.write("error");
+        }
+        else
+        var a=0;
+        var b=1;
+        document.write("<h2>"+"Fibonnacci series"+"<h2>");
+            if(x==1){
+                document.write(a);
+            }
+            else if(x==2){
+                var a=0;
+                document.write(a,"<br>");
+                var b=1;
+                document.write(b,"<br>");
+                for(var i=2;i<x;i++){
+                    var next=a+b;
+                    document.write(next,"<br>");
+                    a=b;
+                    b=next;
+                }
+            }
+    </script>
+</body>
+</html>
